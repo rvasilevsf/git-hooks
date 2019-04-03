@@ -59,7 +59,7 @@ func main() {
 
 				client := github.NewClient(nil)
 				releases, _, _ := client.Repositories.ListReleases(
-					"git-hooks", "git-hooks", &github.ListOptions{})
+					"rvasilevsf", "git-hooks", &github.ListOptions{})
 				update(releases)
 			},
 		},
